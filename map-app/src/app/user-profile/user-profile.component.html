@@ -1,0 +1,16 @@
+<div class="user-profile-container">
+    <h2>User Profile</h2>
+    <img [src]="imageUrl || 'http://placehold.it/180'" height="200"> <br>
+    <input type='file' (change)="onImageChange($event)"> <br><br>
+    <b>User Name</b>: {{userName}}<br><br>
+    <b>Favorite Rides:</b>
+    <ul>
+        <li *ngFor="let r of favoriteRides">{{r}}</li>
+    </ul>
+    <b>Recent Rides:</b>
+    <ul>
+        <li *ngFor="let r of recentRides">{{r}}</li>
+    </ul>
+    <br>
+    <button mat-raised-button color="warn" (click)="deleteUser()">Delete User</button>
+</div>

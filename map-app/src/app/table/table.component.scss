@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.table-container {
+  max-height: 310px;
+  overflow-y: auto;
+}
+
+td {
+  cursor: pointer;
+}
+
+.mat-row:hover {
+  background-color: #F1F1F1;
+}

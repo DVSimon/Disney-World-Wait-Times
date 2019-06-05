@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Parks</mat-label>
+  <mat-select [(ngModel)]="parkFilter" (ngModelChange)="onParkChange($event)" >
+    <mat-option *ngFor="let park of parks" [value]="park">
+      {{park}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

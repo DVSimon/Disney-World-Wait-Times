@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Favorite Rides</h1>
+<div mat-dialog-content>
+  <ng-container *ngFor="let r of rides;">
+    <mat-checkbox [(ngModel)]="r.isFavoriteRide">{{r.rideName}}</mat-checkbox>
+    <br>
+  </ng-container>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onSetRidesClick()">Set rides</button>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+</div>

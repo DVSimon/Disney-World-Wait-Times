@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Create User</h1>
+<div mat-dialog-content>
+  <div fxLayout="row">
+    <p fxFlex="50%">User Name: </p>
+    <mat-form-field fxFlex="50%">
+      <input matInput [(ngModel)]="userName" (ngModelChange)="updateLoginButton()">
+    </mat-form-field>
+  </div>
+  <div fxLayout="row">
+    <p fxFlex="50%">Password: </p>
+    <mat-form-field fxFlex="50%">
+      <input matInput [(ngModel)]="password" (ngModelChange)="updateLoginButton()" type="password">
+    </mat-form-field>
+  </div>
+  <div fxLayout="row">
+    <p fxFlex="50%">Reenter Password: </p>
+    <mat-form-field fxFlex="50%">
+      <input matInput [(ngModel)]="reenterPassword" (ngModelChange)="updateLoginButton()" type="password">
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onLoginClick()" [disabled]="isDisabled">Login</button>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+</div>

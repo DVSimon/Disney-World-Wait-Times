@@ -1,0 +1,12 @@
+<agm-map [zoom]="zoom" [latitude]="lat" [longitude]="lng" [styles]="mapStyles">
+  <agm-marker
+    *ngFor="let r of visibleRides;"
+    [latitude]="r.lat"
+    [longitude]="r.lng"
+    [title]="r.rideName"
+    [markerDraggable]=false
+    (markerClick)="handleRideClick(r)"
+  >
+  </agm-marker>
+</agm-map>
+
