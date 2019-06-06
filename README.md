@@ -21,4 +21,3 @@ NOTE: To view machine learning model generation(pickle files) go to MachineLearn
 
 3. All CSV's for dataset can also be found in MachineLearning Folder
 
-<h1> Website: http://ec2-54-201-84-148.us-west-2.compute.amazonaws.com/ </h1>
